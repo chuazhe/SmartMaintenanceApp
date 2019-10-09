@@ -9,7 +9,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartMaintenanceApp.ViewModels;
 using SmartMaintenanceApp.Models;
-
+using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace SmartMaintenanceApp.Views
 {
@@ -38,40 +39,61 @@ namespace SmartMaintenanceApp.Views
             var password = PasswordEntry.Text;
             //await DisplayAlert("Greeting", $"Hello {email+","+password}!", "Howdy");
 
-            var server = Constants.AuthorizationServerId;
 
+            LoginInfo item = new LoginInfo();
+            item.Email = email;
+            item.Password = password;
 
-            var loginProvider = DependencyService.Get<ILoginProvider>();
-            var idToken = await loginProvider.LoginAsync();
+            var json = JsonConvert.SerializeObject(item);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = null;
+            var client = new HttpClient();
+            response = await client.PostAsync(Constants.RequestUri + "api/account/login", content);
+            var content2 = await response.Content.ReadAsStringAsync();
+            //content 2 is the token
 
-            string userName = null;
-            if (idToken != null)
+            if (response.IsSuccessStatusCode)
             {
                 var jwtHandler = new JwtSecurityTokenHandler();
-                var token = jwtHandler.ReadJwtToken(idToken);
-                userName = token.Claims.FirstOrDefault(c => c.Type == "preferred_username")?.Value;
+                var token = jwtHandler.ReadJwtToken(content2);
+                var role = token.Claims.FirstOrDefault(c => c.Type == "role")?.Value;
+                LoginPanel.IsVisible = false;
+                LogoutPanel.IsVisible = true;
+                ErrorLabel.Text = "";
+                LoggedInLabel.Text = "You are logged in as " + role;
+                MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_MAIN_PAGE);
+
+
+
+
+
+
+
             }
-
-            if (LoginChanged != null) LoginChanged(this, userName);
-
-            if (userName == null)
+            else
             {
                 ErrorLabel.Text = "Login failed.";
+
                 return;
             }
 
-            LoginPanel.IsVisible = false;
-            LogoutPanel.IsVisible = true;
-            ErrorLabel.Text = "";
-            LoggedInLabel.Text = "You are logged in as " + userName;
+
+
         }
-        
+
+
+
 
         private void LogoutClicked(object sender, EventArgs e)
         {
             LoginPanel.IsVisible = true;
             LogoutPanel.IsVisible = false;
             if (LoginChanged != null) LoginChanged(this, null);
+            MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_LOGIN_PAGE);
+            //MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_LOGIN_PAGE);
+
+
+
         }
     }
 }

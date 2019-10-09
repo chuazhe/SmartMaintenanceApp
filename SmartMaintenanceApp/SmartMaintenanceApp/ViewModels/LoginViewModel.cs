@@ -7,15 +7,27 @@ using Xamarin.Forms;
 
 using SmartMaintenanceApp.Models;
 using SmartMaintenanceApp.Views;
+using SmartMaintenanceApp.Services;
+using System.Windows.Input;
 
 namespace SmartMaintenanceApp.ViewModels
 {
     class LoginViewModel : BaseViewModel
     {
-        public LoginViewModel()
-        {
-            Title = "About";
+        private LoginServices _loginServices = new LoginServices();
 
-        }
+        public string Email { get; set; }
+
+        public string Password { get; set; }
+
+        public ICommand LoginCommand => new Command(async() =>
+                                                      {
+                                                          await _loginServices.LoginAsync(Email, Password);
+
+                                                      });
+
+
+
+
     }
 }

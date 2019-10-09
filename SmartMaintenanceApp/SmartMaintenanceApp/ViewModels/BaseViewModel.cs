@@ -15,6 +15,7 @@ namespace SmartMaintenanceApp.ViewModels
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
 
         bool isBusy = false;
+
         public bool IsBusy
         {
             get { return isBusy; }

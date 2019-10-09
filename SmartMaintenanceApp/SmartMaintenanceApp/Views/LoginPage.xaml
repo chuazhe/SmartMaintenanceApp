@@ -6,9 +6,9 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout  Spacing="10" x:Name="LoginPanel">
-                <Entry x:Name="EmailEntry" Placeholder="Email"/>
-                <Entry x:Name="PasswordEntry" Placeholder="Password"/>
-                <Button Clicked="LoginClicked" Text="Login"></Button>
+                <Entry x:Name="EmailEntry" Placeholder="Email" Text="{Binding Email}"/>
+                <Entry x:Name="PasswordEntry" Placeholder="Password" Text="{Binding Password}"/>
+                <Button Text="Login" Clicked="LoginClicked"></Button>
                 <Label x:Name="ErrorLabel" TextColor="#FF0000"></Label>
             </StackLayout>
             <StackLayout x:Name="LogoutPanel" IsVisible="False" Orientation="Horizontal">

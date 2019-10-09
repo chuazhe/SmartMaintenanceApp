@@ -6,6 +6,12 @@ namespace SmartMaintenanceApp.Models
 {
     public class Constants
     {
+        // /10.0.2.2 is the computer IP, because the localhost of emulator is the emulator, not the computer
+
+        public const string RequestUri = "http://10.0.2.2:4000/";
+
+
+
         public const string AuthStateKey = "authState";
         public const string AuthServiceDiscoveryKey = "authServiceDiscovery";
 
@@ -21,8 +27,6 @@ namespace SmartMaintenanceApp.Models
         public static readonly string[] Scopes = new string[] {
         "openid", "profile", "email", "offline_access" };
 
-
-        public string GetOrgUrl { get;}
 
     }
 }

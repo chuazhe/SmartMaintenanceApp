@@ -2,12 +2,15 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartMaintenanceApp.Views;
+using SmartMaintenanceApp.Models;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SmartMaintenanceApp
 {
     public partial class App : Application
     {
+        public static string EVENT_LAUNCH_LOGIN_PAGE = "EVENT_LAUNCH_LOGIN_PAGE";
+        public static string EVENT_LAUNCH_MAIN_PAGE = "EVENT_LAUNCH_MAIN_PAGE";
 
         public App()
         {
@@ -15,6 +18,19 @@ namespace SmartMaintenanceApp
 
 
             MainPage = new LoginPage();
+
+            MessagingCenter.Subscribe<object>(this, EVENT_LAUNCH_LOGIN_PAGE, SetLoginPageAsRootPage);
+            MessagingCenter.Subscribe<object>(this, EVENT_LAUNCH_MAIN_PAGE, SetMainPageAsRootPage);
+        }
+
+        private void SetLoginPageAsRootPage(object sender)
+        {
+            MainPage = new LoginPage();
+        }
+
+        private void SetMainPageAsRootPage(object sender)
+        {
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
