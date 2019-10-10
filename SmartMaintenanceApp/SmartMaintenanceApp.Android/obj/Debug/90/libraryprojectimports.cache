@@ -19,6 +19,13 @@
     <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\24\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\25\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\26\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\27\jl\bin\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\28\jl\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\29\jl\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\30\jl\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\35\jl\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\36\jl\classes.jar</Jar>
+    <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\37\jl\classes.jar</Jar>
     <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\8\jl\arch-core-common.jar</Jar>
     <Jar>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\9\jl\arch-lifecycle-common.jar</Jar>
   </Jars>
@@ -32,9 +39,14 @@
     <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\22\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\23\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\25\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\27\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\30\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\35\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\36\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\90\lp\20\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\90\lp\27\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -47,5 +59,9 @@
     <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\22.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\23.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\25.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\27.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\30.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\35.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\lp\36.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
