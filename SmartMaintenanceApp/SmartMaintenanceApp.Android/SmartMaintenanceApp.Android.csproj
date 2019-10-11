@@ -73,9 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AndroidConstants.cs" />
-    <Compile Include="FirebaseNotificationService.cs" />
+    <Compile Include="FirebaseRegistrationService.cs" />
+    <Compile Include="FirebaseService.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="MyFirebaseMessagingService.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

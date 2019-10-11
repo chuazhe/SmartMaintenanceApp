@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Util;
 using Android.Gms.Common;
+using SmartMaintenanceApp.Views;
+using Android.Content;
 
 namespace SmartMaintenanceApp.Droid
 {
@@ -24,24 +26,30 @@ namespace SmartMaintenanceApp.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
 
-            if (Intent.Extras != null)
+
+            if (IsPlayServicesAvailable() == false)
             {
-                foreach (var key in Intent.Extras.KeySet())
-                {
-                    if (key != null)
-                    {
-                        var value = Intent.Extras.GetString(key);
-                        Log.Debug(TAG, "Key: {0} Value: {1}", key, value);
-                    }
-                }
+                throw new Exception("This device does not have Google Play Services and cannot receive push notifications.");
             }
 
-            IsPlayServicesAvailable();
             CreateNotificationChannel();
 
+            LoadApplication(new App());
 
+
+
+        }
+
+        protected override void OnNewIntent(Intent intent)
+        {
+            if (intent.Extras != null)
+            {
+                var message = intent.GetStringExtra("message");
+                (App.Current.MainPage as MainPage)?.AddMessage(message);
+            }
+
+            base.OnNewIntent(intent);
         }
 
         public bool IsPlayServicesAvailable()
@@ -65,23 +73,20 @@ namespace SmartMaintenanceApp.Droid
 
         private void CreateNotificationChannel()
         {
-            if (Build.VERSION.SdkInt < BuildVersionCodes.O)
+            // Notification channels are new as of "Oreo".
+            // There is no need to create a notification channel on older versions of Android.
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
             {
-                // Notification channels are new in API 26 (and not a part of the
-                // support library). There is no need to create a notification
-                // channel on older versions of Android.
-                return;
+                var channelName = AndroidConstants.NotificationChannelName;
+                var channelDescription = String.Empty;
+                var channel = new NotificationChannel(channelName, channelName, NotificationImportance.Default)
+                {
+                    Description = channelDescription
+                };
+
+                var notificationManager = (NotificationManager)GetSystemService(NotificationService);
+                notificationManager.CreateNotificationChannel(channel);
             }
-
-            var channelName = CHANNEL_ID;
-            var channelDescription = string.Empty;
-            var channel = new NotificationChannel(CHANNEL_ID, channelName, NotificationImportance.Default)
-            {
-                Description = channelDescription
-            };
-
-            var notificationManager = (NotificationManager)GetSystemService(NotificationService);
-            notificationManager.CreateNotificationChannel(channel);
         }
     }
 }

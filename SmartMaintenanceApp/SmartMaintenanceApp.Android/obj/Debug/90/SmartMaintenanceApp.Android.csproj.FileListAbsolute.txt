@@ -71,7 +71,6 @@ C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintena
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\System.ServiceModel.Internals.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\System.Web.Services.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\Mono.Security.pdb
-C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\SmartMaintenanceApp.Android.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\FormsViewGroup.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\Microsoft.CSharp.pdb
@@ -95,6 +94,7 @@ C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintena
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\System.Web.Services.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\Mono.Security.pdb
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb

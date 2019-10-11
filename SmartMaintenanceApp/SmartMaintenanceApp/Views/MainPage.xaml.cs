@@ -52,5 +52,11 @@ namespace SmartMaintenanceApp.Views
                 IsPresented = false;
             }
         }
+
+        public void AddMessage(string message)
+        {
+
+            System.Diagnostics.Debug.WriteLine(message);
+        }
     }
 }
