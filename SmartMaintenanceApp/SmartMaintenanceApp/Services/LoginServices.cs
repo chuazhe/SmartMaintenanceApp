@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using SmartMaintenanceApp.Models;
 using System.Diagnostics;
 
+
 namespace SmartMaintenanceApp.Services
 {
     class LoginServices
@@ -28,8 +29,8 @@ namespace SmartMaintenanceApp.Services
       
             if (response.IsSuccessStatusCode)
             {
-                 Debug.WriteLine(content2);
-            
+
+                Debug.WriteLine(content2);
 
             }
             else
@@ -39,5 +40,6 @@ namespace SmartMaintenanceApp.Services
 
 
         }
+
     }
 }

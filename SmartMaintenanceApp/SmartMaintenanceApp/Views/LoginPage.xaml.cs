@@ -11,6 +11,7 @@ using SmartMaintenanceApp.ViewModels;
 using SmartMaintenanceApp.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Diagnostics;
 
 namespace SmartMaintenanceApp.Views
 {
@@ -58,27 +59,26 @@ namespace SmartMaintenanceApp.Views
                 var token = jwtHandler.ReadJwtToken(content2);
                 var role = token.Claims.FirstOrDefault(c => c.Type == "role")?.Value;
                 LoginPanel.IsVisible = false;
-                LogoutPanel.IsVisible = true;
+                //LogoutPanel.IsVisible = true;
                 ErrorLabel.Text = "";
-                LoggedInLabel.Text = "You are logged in as " + role;
-                MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_MAIN_PAGE);
+                Debug.WriteLine("You are logged in as "+email +"  "+role);
+                //MessagingCenter.Send<object,string,string>(this, App.EVENT_LAUNCH_MAIN_PAGE,email,role);
+                App.IsUserLoggedIn = true;
+                App.Email =email;
+                App.Role = role;
 
-
-
-
-
-
+                Navigation.InsertPageBefore(new MainPage(), this);
+                await Navigation.PopAsync();
 
             }
             else
             {
-                ErrorLabel.Text = "Login failed.";
+                ErrorLabel.Text = "Login failed";
+                EmailEntry.Text = string.Empty;
+                PasswordEntry.Text = string.Empty;
 
                 return;
             }
-
-
-
         }
 
 
@@ -87,9 +87,9 @@ namespace SmartMaintenanceApp.Views
         private void LogoutClicked(object sender, EventArgs e)
         {
             LoginPanel.IsVisible = true;
-            LogoutPanel.IsVisible = false;
+            //LogoutPanel.IsVisible = false;
             if (LoginChanged != null) LoginChanged(this, null);
-            MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_LOGIN_PAGE);
+            //MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_LOGIN_PAGE);
             //MessagingCenter.Send<object>(this, App.EVENT_LAUNCH_LOGIN_PAGE);
 
 

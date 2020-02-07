@@ -2,18 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartMaintenanceApp.Views.LoginPage"
-             Title="{Binding Title}">
+             Title="Login">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout  Spacing="10" x:Name="LoginPanel">
+            <StackLayout  Spacing="20" x:Name="LoginPanel" VerticalOptions="Center">
+                <Label x:Name="Heading" TextColor="Black" FontSize = "35" Text="SmartMaintenance" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
                 <Entry x:Name="EmailEntry" Placeholder="Email" Text="{Binding Email}"/>
-                <Entry x:Name="PasswordEntry" Placeholder="Password" Text="{Binding Password}"/>
+                <Entry x:Name="PasswordEntry" Placeholder="Password" Text="{Binding Password}" IsPassword="true"/>
                 <Button Text="Login" Clicked="LoginClicked"></Button>
-                <Label x:Name="ErrorLabel" TextColor="#FF0000"></Label>
-            </StackLayout>
-            <StackLayout x:Name="LogoutPanel" IsVisible="False" Orientation="Horizontal">
-                <Label x:Name="LoggedInLabel" ></Label>
-                <Button Clicked="LogoutClicked" Text="Logout"></Button>
+                <Label x:Name="ErrorLabel" TextColor="#FF0000" HorizontalTextAlignment="Center"></Label>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

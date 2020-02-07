@@ -10,6 +10,7 @@ namespace SmartMaintenanceApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
+        /*
         MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         List<HomeMenuItem> menuItems;
         public MenuPage()
@@ -34,6 +35,6 @@ namespace SmartMaintenanceApp.Views
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
                 await RootPage.NavigateFromMenu(id);
             };
+            */
         }
     }
-}

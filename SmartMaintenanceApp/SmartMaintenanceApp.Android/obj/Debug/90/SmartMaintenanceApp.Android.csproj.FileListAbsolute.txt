@@ -96,6 +96,7 @@ C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintena
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\Mono.Security.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\SmartMaintenanceApp.dll.mdb
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\res\drawable\success.png
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\Microsoft.CSharp.pdb
@@ -120,4 +121,6 @@ C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintena
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.dll
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.dll.mdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\linksrc\SmartMaintenanceApp.dll.mdb

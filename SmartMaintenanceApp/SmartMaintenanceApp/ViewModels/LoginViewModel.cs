@@ -23,7 +23,6 @@ namespace SmartMaintenanceApp.ViewModels
         public ICommand LoginCommand => new Command(async() =>
                                                       {
                                                           await _loginServices.LoginAsync(Email, Password);
-
                                                       });
 
 

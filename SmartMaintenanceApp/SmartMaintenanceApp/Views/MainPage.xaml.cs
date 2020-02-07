@@ -1,6 +1,7 @@
 ﻿using SmartMaintenanceApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,19 +9,34 @@ using Xamarin.Forms.Xaml;
 namespace SmartMaintenanceApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : MasterDetailPage
+    public partial class MainPage : ContentPage
     {
-        Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+        //Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
 
         public MainPage()
         {
             InitializeComponent();
 
-            MasterBehavior = MasterBehavior.Popover;
+            Debug.WriteLine("Login" + App.IsUserLoggedIn);
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            Email.Text = "Logged in as: "+App.Email;
+            Role.Text = "Role: "+App.Role;
+            //MasterBehavior = MasterBehavior.Popover;
+
+            //MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
 
         }
+
+        private void LogoutClicked(object sender, EventArgs e)
+        {
+
+            App.IsUserLoggedIn = false;
+            App.Current.MainPage = new NavigationPage(new LoginPage());
+            Debug.WriteLine("Logout" + App.IsUserLoggedIn);
+
+        }
+
+        /*
 
         public async Task NavigateFromMenu(int id)
         {
@@ -52,11 +68,15 @@ namespace SmartMaintenanceApp.Views
                 IsPresented = false;
             }
         }
+        */
 
+
+        /*
         public void AddMessage(string message)
         {
 
             System.Diagnostics.Debug.WriteLine(message);
         }
+        */
     }
 }

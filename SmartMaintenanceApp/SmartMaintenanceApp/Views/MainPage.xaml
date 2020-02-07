@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartMaintenanceApp.Views.MainPage"
+             Title="Login Success">
+    <StackLayout Orientation="Vertical" Spacing="10">
+    <BoxView HorizontalOptions="FillAndExpand"
+          VerticalOptions="Start" Color="#FAFAFA" />
+        <Image Source="success.png" VerticalOptions="Center" HeightRequest="128"/>
+        <Label x:Name="Email" Text="Initial Label" HorizontalTextAlignment="Center"/>
+        <Label x:Name="Role" Text="Initial Label 2" HorizontalTextAlignment="Center"/>
+        <Button Text="Logout" Clicked="LogoutClicked"></Button>
+
+    </StackLayout>
+</ContentPage>
+
+
+<!--
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:SmartMaintenanceApp.Views"
@@ -21,3 +38,4 @@
         </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>
+    -->

@@ -22,6 +22,8 @@ namespace SmartMaintenanceApp.Droid
     {
         public override void OnMessageReceived(RemoteMessage message)
         {
+            if(App.IsUserLoggedIn)
+            { 
             base.OnMessageReceived(message);
             string messageBody = string.Empty;
 
@@ -41,6 +43,9 @@ namespace SmartMaintenanceApp.Droid
 
             // send the incoming message directly to the MainPage
             SendMessageToMainPage(messageBody);
+
+            }
+
         }
 
         void SendLocalNotification(string body)

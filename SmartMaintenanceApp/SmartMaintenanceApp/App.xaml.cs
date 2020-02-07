@@ -9,18 +9,37 @@ namespace SmartMaintenanceApp
 {
     public partial class App : Application
     {
+
+        public static bool IsUserLoggedIn { get; set; }
+        public static string Email { get; set; }
+        public static string Role { get; set; }
+
+        /*
         public static string EVENT_LAUNCH_LOGIN_PAGE = "EVENT_LAUNCH_LOGIN_PAGE";
         public static string EVENT_LAUNCH_MAIN_PAGE = "EVENT_LAUNCH_MAIN_PAGE";
+        */
 
         public App()
         {
-            InitializeComponent();
 
+            if (!IsUserLoggedIn)
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
+
+
+            /*
+            InitializeComponent();
 
             MainPage = new LoginPage();
 
             MessagingCenter.Subscribe<object>(this, EVENT_LAUNCH_LOGIN_PAGE, SetLoginPageAsRootPage);
             MessagingCenter.Subscribe<object>(this, EVENT_LAUNCH_MAIN_PAGE, SetMainPageAsRootPage);
+            */
         }
 
         private void SetLoginPageAsRootPage(object sender)

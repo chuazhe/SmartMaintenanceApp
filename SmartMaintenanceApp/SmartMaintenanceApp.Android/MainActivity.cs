@@ -33,7 +33,7 @@ namespace SmartMaintenanceApp.Droid
                 throw new Exception("This device does not have Google Play Services and cannot receive push notifications.");
             }
 
-            CreateNotificationChannel();
+            //CreateNotificationChannel();
 
             LoadApplication(new App());
 
@@ -43,11 +43,13 @@ namespace SmartMaintenanceApp.Droid
 
         protected override void OnNewIntent(Intent intent)
         {
+            /*
             if (intent.Extras != null)
             {
                 var message = intent.GetStringExtra("message");
                 (App.Current.MainPage as MainPage)?.AddMessage(message);
             }
+            */
 
             base.OnNewIntent(intent);
         }
@@ -71,6 +73,8 @@ namespace SmartMaintenanceApp.Droid
             return true;
         }
 
+        /*
+
         private void CreateNotificationChannel()
         {
             // Notification channels are new as of "Oreo".
@@ -88,5 +92,7 @@ namespace SmartMaintenanceApp.Droid
                 notificationManager.CreateNotificationChannel(channel);
             }
         }
+
+    */
     }
 }
