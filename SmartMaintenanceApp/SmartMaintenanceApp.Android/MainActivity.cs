@@ -27,13 +27,14 @@ namespace SmartMaintenanceApp.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-
+            /*
             if (IsPlayServicesAvailable() == false)
             {
                 throw new Exception("This device does not have Google Play Services and cannot receive push notifications.");
             }
+            */
 
-            //CreateNotificationChannel();
+            CreateNotificationChannel();
 
             LoadApplication(new App());
 
@@ -73,7 +74,7 @@ namespace SmartMaintenanceApp.Droid
             return true;
         }
 
-        /*
+        
 
         private void CreateNotificationChannel()
         {
@@ -93,6 +94,6 @@ namespace SmartMaintenanceApp.Droid
             }
         }
 
-    */
+    
     }
 }

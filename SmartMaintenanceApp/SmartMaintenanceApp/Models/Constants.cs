@@ -8,7 +8,12 @@ namespace SmartMaintenanceApp.Models
     {
         // /10.0.2.2 is the computer IP, because the localhost of emulator is the emulator, not the computer
 
-        public const string RequestUri = "http://10.0.2.2:4000/";
+        //public const string RequestUri = "http://10.0.2.2:4000/";
+        //public const string RequestUri = "http://192.0.2.2:4000/";
+
+        public const string RequestUri = "http://86b49f5c.ngrok.io/";
+        
+
 
 
 
