@@ -11,7 +11,7 @@ namespace SmartMaintenanceApp.Models
         //public const string RequestUri = "http://10.0.2.2:4000/";
         //public const string RequestUri = "http://192.0.2.2:4000/";
 
-        public const string RequestUri = "http://86b49f5c.ngrok.io/";
+        public const string RequestUri = "http://008f5048.ngrok.io/";
         
 
 

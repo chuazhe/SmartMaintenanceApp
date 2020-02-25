@@ -35,14 +35,34 @@ namespace SmartMaintenanceApp.Droid
             // NOTE: test messages sent via the Azure portal will be received here
             else
             {
-                messageBody = message.Data.Values.First();
+                    //messageBody = message.Data.Values.First();
+                    messageBody = message.Data["message"];
             }
 
-            // convert the incoming message to a local notification
-            SendLocalNotification(messageBody);
+            //User
 
-            // send the incoming message directly to the MainPage
-            SendMessageToMainPage(messageBody);
+             int value = Convert.ToInt32(message.Data["manager"]);
+
+             if (value == 1 && App.Role=="Manager")
+             {
+                    // convert the incoming message to a local notification
+                    SendLocalNotification(messageBody);
+
+                    // send the incoming message directly to the MainPage
+                    SendMessageToMainPage(messageBody);
+             }
+
+                if (value == 0 && App.Role == "User")
+                {
+                    // convert the incoming message to a local notification
+                    SendLocalNotification(messageBody);
+
+                    // send the incoming message directly to the MainPage
+                    SendMessageToMainPage(messageBody);
+                }
+
+
+
 
             }
 
