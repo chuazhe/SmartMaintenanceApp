@@ -12,7 +12,7 @@ using System.Windows.Input;
 
 namespace SmartMaintenanceApp.ViewModels
 {
-    class LoginViewModel : BaseViewModel
+    class LoginViewModel
     {
         private LoginServices _loginServices = new LoginServices();
 
