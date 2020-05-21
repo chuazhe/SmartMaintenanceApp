@@ -22,36 +22,38 @@ namespace SmartMaintenanceApp.Droid
     {
         public override void OnMessageReceived(RemoteMessage message)
         {
-            if(App.IsUserLoggedIn)
-            { 
-            base.OnMessageReceived(message);
-            string messageBody = string.Empty;
-
-            if (message.GetNotification() != null)
+            if (App.IsUserLoggedIn)
             {
-                messageBody = message.GetNotification().Body;
-            }
+                base.OnMessageReceived(message);
+                string messageBody = string.Empty;
 
-            // NOTE: test messages sent via the Azure portal will be received here
-            else
-            {
+                if (message.GetNotification() != null)
+                {
+                    messageBody = message.GetNotification().Body;
+                }
+
+                // NOTE: test messages sent via the Azure portal will be received here
+                else
+                {
                     //messageBody = message.Data.Values.First();
                     messageBody = message.Data["message"];
-            }
+                }
 
-            //User
+                //User
 
-             int value = Convert.ToInt32(message.Data["manager"]);
+                int value = Convert.ToInt32(message.Data["manager"]);
 
-             if (value == 1 && App.Role=="Manager")
-             {
+                //Check for Manager
+                if (value == 1 && App.Role == "Manager")
+                {
                     // convert the incoming message to a local notification
                     SendLocalNotification(messageBody);
 
                     // send the incoming message directly to the MainPage
                     SendMessageToMainPage(messageBody);
-             }
+                }
 
+                //Check for User
                 if (value == 0 && App.Role == "User")
                 {
                     // convert the incoming message to a local notification

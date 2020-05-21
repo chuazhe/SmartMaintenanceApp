@@ -18,8 +18,8 @@ namespace SmartMaintenanceApp.Views
 
             Debug.WriteLine("Login" + App.IsUserLoggedIn);
 
-            Email.Text = "Logged in as: "+App.Email;
-            Role.Text = "Role: "+App.Role;
+            Email.Text = "Logged in as: " + App.Email;
+            Role.Text = "Role: " + App.Role;
 
 
         }

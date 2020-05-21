@@ -7,10 +7,10 @@ namespace SmartMaintenanceApp.Models
     public class Constants
     {
         // /10.0.2.2 is the computer IP, because the localhost of emulator is the emulator, not the computer
-
         public const string RequestUri = "http://10.0.2.2:4000/";
         //public const string RequestUri = "http://192.0.2.2:4000/";
 
+        // Public Server
         //public const string RequestUri = " http://3a043434.ngrok.io/";
 
 

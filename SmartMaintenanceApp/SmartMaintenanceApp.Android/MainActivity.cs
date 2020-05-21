@@ -74,7 +74,7 @@ namespace SmartMaintenanceApp.Droid
             return true;
         }
 
-        
+
 
         private void CreateNotificationChannel()
         {
@@ -94,6 +94,6 @@ namespace SmartMaintenanceApp.Droid
             }
         }
 
-    
+
     }
 }

@@ -23,8 +23,6 @@ namespace SmartMaintenanceApp.Droid
         {
             string token = FirebaseInstanceId.Instance.Token;
 
-            // NOTE: logging the token is not recommended in production but during
-            // development it is useful to test messages directly from Firebase
             Log.Info(AndroidConstants.DebugTag, $"Token received: {token}");
 
             SendRegistrationToServer(token);

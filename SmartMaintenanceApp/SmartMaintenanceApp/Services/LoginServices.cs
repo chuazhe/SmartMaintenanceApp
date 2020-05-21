@@ -26,7 +26,7 @@ namespace SmartMaintenanceApp.Services
             response = await client.PostAsync(Constants.RequestUri + "api/account/login", content);
             var content2 = await response.Content.ReadAsStringAsync();
             //content 2 is the token
-      
+
             if (response.IsSuccessStatusCode)
             {
 

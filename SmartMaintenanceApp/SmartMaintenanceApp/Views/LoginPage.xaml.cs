@@ -15,17 +15,17 @@ using System.Diagnostics;
 
 namespace SmartMaintenanceApp.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class LoginPage : ContentPage
+    {
         public event EventHandler<string> LoginChanged;
         LoginViewModel viewModel;
 
 
 
-        public LoginPage ()
-		{
-			InitializeComponent();
+        public LoginPage()
+        {
+            InitializeComponent();
 
 
             BindingContext = viewModel = new LoginViewModel();
@@ -61,10 +61,10 @@ namespace SmartMaintenanceApp.Views
                 LoginPanel.IsVisible = false;
                 //LogoutPanel.IsVisible = true;
                 ErrorLabel.Text = "";
-                Debug.WriteLine("You are logged in as "+email +"  "+role);
+                Debug.WriteLine("You are logged in as " + email + "  " + role);
                 //MessagingCenter.Send<object,string,string>(this, App.EVENT_LAUNCH_MAIN_PAGE,email,role);
                 App.IsUserLoggedIn = true;
-                App.Email =email;
+                App.Email = email;
                 App.Role = role;
 
                 Navigation.InsertPageBefore(new MainPage(), this);
