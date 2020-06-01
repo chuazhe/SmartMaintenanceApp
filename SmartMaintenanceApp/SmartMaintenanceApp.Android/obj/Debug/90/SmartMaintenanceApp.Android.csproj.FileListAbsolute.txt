@@ -14,13 +14,13 @@ C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintena
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\XbdMerge\1f4fd9cc.proguard.stamp
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\XbdMerge\d9f2c52f.proguard.stamp
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\XbdMerge\04db0838.proguard.stamp
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\libraryimports.cache.stamp
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.Android.dll
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.Android.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\com.chuazhe.smartmaintenance.apk
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\com.chuazhe.smartmaintenance-Signed.apk
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.dll
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\bin\Debug\SmartMaintenanceApp.pdb
-C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\libraryimports.cache.stamp
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\res.flag
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp.Android\obj\Debug\90\SmartMaintenanceApp.Android.csproj.CoreCompileInputs.cache

@@ -1,12 +1,13 @@
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.deps.json
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.dll
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.pdb
+C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.csprojAssemblyReference.cache
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.AssemblyInfo.cs
-C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.deps.json
-C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.dll
-C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\bin\Debug\netstandard2.0\SmartMaintenanceApp.pdb
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.dll
 C:\Users\User\source\repos\SmartMaintenanceApp\SmartMaintenanceApp\SmartMaintenanceApp\obj\Debug\netstandard2.0\SmartMaintenanceApp.pdb
